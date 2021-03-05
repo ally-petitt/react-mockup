@@ -1,0 +1,13 @@
+.hero__container {
+    height: 421px;
+    width: 100vw;
+    background-size: cover;
+    background-image: url('../hero-background.png');
+}
+
+@media screen and (max-width: 1279px) {
+    .hero__container {
+        background-image: none;
+        background-color: #282C34
+    }
+}

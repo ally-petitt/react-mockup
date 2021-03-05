@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+    /* --blue: #61DAFB;
+    --dark-color: #282C34; */
+
+header {
+    background-color: #20232A;
+    position: fixed;
+    height: 60px;
+    min-width: 100vw;
+    font-size: 18px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.navbar__container {
+    width: 80%;
+    max-width: 1260px;
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.navbar__container > * {
+    height: 100%;
+}
+
+.navbar__logo-container {
+    width: 203.33px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.navbar__react-name {
+    color: #61DAFB;
+    font-size: 20px;
+    font-weight: 700;
+    margin-left: 10px;
+    margin-top: 1px;
+}
+
+.navbar__navigation-links {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 482.2px;
+    font-weight: 300;
+}
+
+.navbar__navigation-links > a {
+    width: 79.11px;
+}
+
+.navbar__navigation-links > a:hover,
+.navbar__react-version:hover, .navbar__language-container > *:hover,
+.navbar__github:hover {
+    color: #61DAFB;
+}
+
+.navbar__language-container,
+.navbar__github {
+    float: right;
+}
+
+a {
+    text-decoration: none;
+}
+
+header a {
+    color: white;
+}
+
+.navbar__input-search {
+    height: 28px;
+    width: 236px;
+    padding: 4px 4px 4px 29px;
+    margin-left: -20px;
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+}
+
+input {
+    outline: none;
+}
+
+.navbar__react-version {
+    padding: 5px 10px;
+    width: 65.52px;
+    height: 26px;
+    font-size: 14px;
+}
+
+.navbar__language-container {
+    width: 120.22;
+    height: 34px;
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+}
+
+.navbar__languages-text {
+    font-size: 14px;
+    margin-left: 8px;
+}
+
+.navbar__github {
+    max-width: 350px;
+    font-size: 14px;
+    margin-left: 10px;
+    height: 16px;
+}
+
+.navbar__fade-links {
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient(to right, transparent 0%,#20232A 20%);
+    padding-left: 15px;
+}
+
+@media screen and (max-width: 1279px) {
+    header, .navbar__container {
+        height: 50px;
+    }
+
+    .navbar__navigation-links > a {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 1278px) {
+    .navbar__container {
+        width: 85%;
+    }
+
+    .navbar__input-search {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .navbar__container {
+        width: 90%;
+    }
+
+    .navbar__github {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 845px) {
+    .navbar__languages-text, .navbar__react-version {
+        display: none;
+    }
+
+    .navbar__container {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 604px) {
+    .navbar__container, header,
+    .navbar__container > * {
+        height: 40px;
+    }
+
+    .navbar__logo-container {
+        width: fit-content;
+    }
+
+    .navbar__react-name {
+        display: none;
+    }
+
+    .navbar__navigation-links {
+        width: 60%;
+    }
+
+    .navbar__navigation-links > a {
+        padding: 0 8px;
+    }
+}
+
+@media screen and (max-width: 303px) {
+    .community {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 207px) {
+    .blog {
+        display: none;
+    }
+}
